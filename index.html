@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clearIE9FileInput</title>
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" id="file" />
+        <input />
+        <input type="submit" />
+    </form>
+    <button id="btn">clear fileInput's data</button>
+    <script src="clearIE9FileInput.js" ></script>
+    <script>
+        var btn = document.getElementById("btn");
+        var fileInput = document.getElementById("file");
+        btn.addEventListener("click",function(){
+            clearIE9FileInput(fileInput);
+        });
+        
+    </script>
+</body>
+
+</html>
